@@ -1,0 +1,30 @@
+.container{
+	width: 45%!important;
+	margin: 0 auto;
+}
+h2, h3{
+	text-align: center;
+}
+#aviso-descuento{
+	font-size: 18px;
+	font-style: italic;
+	color: blue;
+	font-weight: 550;
+	text-align: center;
+}
+#caja-orden{
+	display: none;
+}
+#loading{
+	display: block;
+	margin: 0 auto;
+}
+#caja-loading{
+	display: none;
+	width: 60%;
+}
+#logo{
+	width: 200px;
+	display: block;
+	margin: 20px auto;
+}
