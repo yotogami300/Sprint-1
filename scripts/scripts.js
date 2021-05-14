@@ -46,11 +46,12 @@ function Calcular(){
 		let valorCompra = pcsCompradas * 820000;
 
 		cajaMain.style.display = "none";
+
 		cajaLoad.style.display = "block";
 
 		setTimeout(MostrarOrden, 2000);
 
-		if (valorCompra < 1640000) {
+		if (valorCompra < 1640000 || valorCompra > 9840000) {
 
 			ImprimirDatos(valorCompra, 0, valorCompra);
 
@@ -82,13 +83,7 @@ function Calcular(){
 
 			avisoDescuento.innerHTML = "Su Descuento es del 35%";
 		}
-		else if (valorCompra > 9840000) {
-
-			ImprimirDatos(valorCompra, 0, valorCompra);
-
-			avisoDescuento.innerHTML = "No hay Descuentos para esta Compra";
-
-		}
+		
 	}
 
 	
